@@ -36,3 +36,13 @@ const swiper = new Swiper('.swiper', {
 
   
 });
+
+//FOOTER
+
+let year = new Date().getFullYear();
+
+let footerDescElement = document.querySelector(".footer-desc");
+
+if (footerDescElement) {
+  footerDescElement.textContent = "Copyright @" + year + " | All rights reserved.";
+}
