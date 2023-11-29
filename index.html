@@ -180,6 +180,36 @@
     </div>
     </section>
 
+    <section id="contact">
+      <h2 class="contact-title">Get In Touch</h2>
+      <form action="#" method="POST" class="contactForm" id="form" onsubmit="validateAndSubmit(event)">
+      
+        <div class="input__container">
+            <label for="name">Company Name</label>
+            <input type="text" class="input" id="name" name="name" placeholder="Enter Company Name..." required>
+        </div>
+  
+        <div class="input__container">
+          <label for="email">Email</label>
+            <input type="email" class="input" id="email" name="email" placeholder="Enter Email..." required>  
+        </div>
+    
+        <div class="input__container">
+          <label for="subject">Subject</label>
+          <input type="text" class="input" id="subject" name="subject" placeholder="Enter Subject..." required>
+      </div>
+
+        <div class="input__container textarea">
+          <label for="message">Your Message</label>
+          <textarea name="message" class="input" id="message"  placeholder="Type your message here..." required></textarea>
+        </div>
+    
+        <button type="submit" class="buttonSubmit">Send Message</button>
+     
+    </form>
+    
+    </section>
+
   </main>
 
   <footer id="footer">
