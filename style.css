@@ -406,3 +406,44 @@ svg.swiper-button-next {
    margin-right: 0;
  }
  }
+
+ /* PROJECTS*/
+
+
+ section#projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 70px 20px;
+  background: linear-gradient(to top right, var(--primary-color), var(--primary-color), var(--primary-color),var(--secondary-color));
+}
+@media screen and (max-width: 900px) {
+  section#projects {
+    padding: 30px 20px;
+  }
+}
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  
+}
+
+#projects article {
+  width: 300px;
+  height: 400px;
+  background: var(--primary-color);
+  border: 1px solid var(--text-color);
+  border-radius: 10px;
+}
+
+h2.projects-title{
+  text-align: center;
+  font-size: 34px;
+  letter-spacing: 4px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
