@@ -8,3 +8,31 @@ menuToggle.addEventListener("click", function (event) {
   navUl.classList.toggle("show");
 });
 
+//My Services - Swiper
+
+const swiper = new Swiper('.swiper', {
+  loop: true,
+  slidesPerView: 1,
+  slidesPerGroup: 1,
+  spaceBetween: 10,
+
+  breakpoints: {
+    
+    680: {
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+      spaceBetween: 20,
+    },
+  },
+
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  
+});
