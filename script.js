@@ -37,10 +37,6 @@ const swiper = new Swiper('.swiper', {
   
 });
 
-//CONTACT
-
-
-
 //FOOTER
 
 let year = new Date().getFullYear();
