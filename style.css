@@ -74,7 +74,11 @@ li a{
   cursor: pointer;
   color: var(--text-color);
 }
-  
+
+a {
+  text-decoration: none;
+}
+ 
 li a:hover{
   color: var(--secondary-color);
 }
