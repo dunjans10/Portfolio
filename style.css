@@ -24,6 +24,11 @@ body {
   font-family: "Montserrat", sans-serif;
   background-color: var(--primary-color);
   color: var(--text-color);
+  }
+
+
+a {
+  text-decoration: none !important;
 }
 
 /* HEADER */
@@ -75,10 +80,6 @@ li a{
   color: var(--text-color);
 }
 
-a {
-  text-decoration: none;
-}
- 
 li a:hover{
   color: var(--secondary-color);
 }
@@ -123,14 +124,20 @@ section#home {
   display: flex;
     flex-direction: column;
     gap: 40px;
+    position: relative;
 }
 
 .home-txt-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
-
+@media screen and (max-width: 900px) {
+  .home-txt-container {
+    padding: 0;
+  }
+}
 img.myImg {
   width: 100%;
 }
@@ -171,7 +178,7 @@ h2.home-title {
   letter-spacing: 5px;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 984px) {
   h2.home-title {
     letter-spacing: 0;
   }
@@ -220,6 +227,8 @@ section#about {
 @media screen and (max-width: 900px) {
   section#about {
   padding: 29px 50px;
+  position: relative;
+
   }
 }
 
@@ -259,6 +268,7 @@ button.btn-cv {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s, transform 0.3s;
 }
+
 @media screen and (max-width: 390px) {
   button.btn-cv {
     width: 260px;
@@ -413,7 +423,6 @@ svg.swiper-button-next {
 
  /* PROJECTS*/
 
-
  section#projects {
   display: flex;
   align-items: center;
@@ -550,5 +559,141 @@ h4.footer-desc {
 @media screen and (max-width: 680px) {
   .top-line {
     max-width: 320px;
+  }
+}
+
+/* TOOLTIPS */
+
+.tooltip{
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  font-size: 10px;
+}
+
+.tooltipText {
+  transform: translateX(-50%);
+  background-color: var(--text-color);
+  color: var(--primary-color);
+  padding: 10px;
+  border: 1px solid var(--text-color);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  width: 160px;
+  height: 145px;
+  border-radius: 15px;
+}
+
+.tooltip:hover .tooltipText {
+  visibility: visible;
+  opacity: 1;
+}
+.tooltipText h5{
+  margin-bottom: 10px;
+}
+
+.tooltip:hover svg {
+  fill: var(--secondary-color);
+}
+
+.tooltip.tooltipHome {
+  margin-top: -100px;
+}
+
+@media screen and (max-width: 900px) {
+  .tooltip.tooltipHome {
+    margin-top: -120px;
+    margin-left: 650px;
+}
+}
+
+@media screen and (max-width: 806px) {
+  .tooltip.tooltipHome {
+   
+    margin-left: 450px;
+}
+}
+
+@media screen and (max-width: 610px) {
+  .tooltip.tooltipHome {
+
+    margin-left: 350px;
+}
+}
+@media screen and (max-width: 510px) {
+  .tooltip.tooltipHome {
+
+    margin-left: 250px;
+}
+}
+@media screen and (max-width: 410px) {
+  .tooltip.tooltipHome {
+   
+    margin-left: 150px;
+}
+}
+
+.tooltip.tooltipServices {
+  margin-top: -110px;
+  margin-left: 300px;
+}
+@media screen and (max-width: 900px) {
+  .tooltip.tooltipServices {
+
+    margin-left: 210px;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .tooltip.tooltipServices {
+   
+    margin-left: 110px;
+  }
+}
+
+.tooltip.tooltipAbout {
+  margin-top: -130px;
+  margin-left: 90px;
+}
+
+.tooltip.tooltipCommunication {
+  margin-top: -120px;
+  margin-left: 400px;
+}
+@media screen and (max-width: 1200px) {
+  .tooltip.tooltipCommunication {
+    margin-left: 200px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .tooltip.tooltipCommunication {
+    margin-left: 80px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .tooltip.tooltipCommunication {
+    margin-left: 26px;
+  }
+
+.tooltipText{
+    transform: translateX(-10%);
+  }
+}
+.tooltip.tooltipLearning {
+  margin-top: -120px;
+  margin-left: 160px;
+}
+
+@media screen and (max-width: 850px) {
+  .tooltip.tooltipLearning {
+    margin-left: 80px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .tooltip.tooltipLearning {
+    margin-left: 10px;
   }
 }
