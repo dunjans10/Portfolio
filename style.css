@@ -447,7 +447,7 @@ svg.swiper-button-next {
 
 #projects article {
   width: 300px;
-  height: 400px;
+  height: 380px;
   background: var(--primary-color);
   border: 1px solid var(--text-color);
   border-radius: 10px;
@@ -482,7 +482,7 @@ img.project-img {
 }
  
   .project-box button {
-    margin: 20px auto;
+    margin: 15px auto 20px;
     width: 200px;
     height: 40px;
     font-size: 18px;
