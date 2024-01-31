@@ -285,6 +285,7 @@ button.btn-cv:hover {
 
 section#services {
   display: flex;
+  position: relative;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -374,53 +375,150 @@ p.txt-slide {
 }
 
 svg.swiper-button-prev {
-  margin-left: 330px;
+  margin-left: 440px;
+  margin-top: 140px;
 }
 
 svg.swiper-button-next {
-  margin-right: 330px;
+  margin-right: 440px;
+  margin-top: 140px;
 }
 
+.swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
+  top:353px;
+}
 @media screen and (max-width: 980px) {
  svg.swiper-button-prev {
   margin-left: 300px;
+  margin-top: 103px;
 }
 
 svg.swiper-button-next {
   margin-right:300px;
+  margin-top: 103px;
 }
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1075px) {
   svg.swiper-button-prev {
-   margin-left: 230px;
+   margin-left: 380px;
  }
  
  svg.swiper-button-next {
-   margin-right:230px;
+   margin-right:380px;
+ }
+ }
+ @media screen and (max-width: 980px) {
+  svg.swiper-button-prev {
+   margin-left: 340px;
+   margin-top: 140px;
+ }
+ 
+ svg.swiper-button-next {
+   margin-right:340px;
+   margin-top: 140px;
+ }
+ } 
+
+ @media screen and (max-width: 920px) {
+  svg.swiper-button-prev {
+   margin-left: 330px;
+   margin-top: 100px;
+ }
+ 
+ svg.swiper-button-next {
+   margin-right: 330px;
+   margin-top: 100px;
  }
  }
 
-@media screen and (max-width: 782px) {
+ 
+ @media screen and (max-width: 826px) {
+  svg.swiper-button-prev {
+   margin-left: 290px;
+   margin-top: 100px;
+ }
+ 
+ svg.swiper-button-next {
+   margin-right: 290px;
+   margin-top: 100px;
+ }
+ }
+
+@media screen and (max-width: 796px) {
  svg.swiper-button-prev {
-  margin-left: 180px;
+  margin-left: 270px;
 }
 
 svg.swiper-button-next {
-  margin-right: 180px;
+  margin-right: 270px;
 }
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 712px) {
   svg.swiper-button-prev {
-   margin-left: 0;
+   margin-left: 240px;
  }
  
  svg.swiper-button-next {
-   margin-right: 0;
+   margin-right: 240px;
+ }
+ }
+ @media screen and (max-width: 682px) {
+  .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
+    display: none;
+      }
+  svg.swiper-button-prev {
+   margin-left: 170px;
+ }
+ 
+ svg.swiper-button-next {
+   margin-right: 170px;
  }
  }
 
+ @media screen and (max-width: 630px) {
+  .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
+    display: none;
+      }
+  svg.swiper-button-prev {
+   margin-left: 140px;
+ }
+ 
+ svg.swiper-button-next {
+   margin-right: 140px;
+ }
+ .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 var(--swiper-pagination-bullet-horizontal-gap,2px) !important;
+}
+ }
+
+ 
+ @media screen and (max-width: 580px) {
+  .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
+display: none;
+  }
+  svg.swiper-button-prev {
+   margin-left: 120px;
+ }
+ 
+ svg.swiper-button-next {
+   margin-right: 120px;
+ }
+ }
+
+ @media screen and (max-width:400px) {
+  .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
+display: none;
+  }
+  svg.swiper-button-prev {
+   margin-left: 40px;
+ }
+ 
+ svg.swiper-button-next {
+   margin-right: 40px;
+ }
+ }
  /* PROJECTS*/
 
  section#projects {
@@ -642,20 +740,6 @@ h4.footer-desc {
   margin-top: -100px;
 }
 
-::-webkit-scrollbar{
-  width: .6rem;
-  border-radius: .5rem;
-  background-color: hsl(0, 0%, 10%);
-}
-
-::-webkit-scrollbar-thumb{
-  border-radius: .5rem;
-  background-color: hsl(0, 0%, 20%);
-}
-
-::-webkit-scrollbar-thumb:hover{
-  background-color: hsl(0, 0%, 30%);
-}
 
 @media screen and (max-width: 900px) {
   .tooltip.tooltipHome {
@@ -752,4 +836,19 @@ h4.footer-desc {
   .tooltip.tooltipLearning {
     margin-left: 10px;
   }
+}
+
+::-webkit-scrollbar{
+  width: .6rem;
+  border-radius: .5rem;
+  background-color: hsl(0, 0%, 10%);
+}
+
+::-webkit-scrollbar-thumb{
+  border-radius: .5rem;
+  background-color: hsl(0, 0%, 20%);
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background-color: hsl(0, 0%, 30%);
 }
