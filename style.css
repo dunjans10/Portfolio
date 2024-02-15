@@ -325,7 +325,7 @@ section#services {
 
 .swiper .swiper-slide{
   display:flex;
-  height: 310px;
+  height: 280px;
   align-items: center;
   flex-direction: column;
   background-color: #FFF;
