@@ -74,3 +74,13 @@ let footerDescElement = document.querySelector(".footer-desc");
 if (footerDescElement) {
   footerDescElement.textContent = "Copyright @" + year + " | All rights reserved.";
 }
+
+/* Clear form on submit */
+
+document.getElementById("form").addEventListener("submit", function(event) {
+
+  document.getElementById("name").value = "";
+  document.getElementById("email").value = "";
+  document.getElementById("subject").value = "";
+  document.getElementById("message").value = "";
+});
